@@ -65,6 +65,51 @@
         © Lisotech Innovations || All Rights Reserved.
       </p>
     </div>
+
+    <!-- Privacy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <h2>Privacy Policy</h2>
+            <p>At WebSale, we respect your privacy. We do not collect or store personal data unless explicitly provided through direct communication channels like WhatsApp. Your information is safe with us and will never be shared with third parties.</p>
+            <button class="close-btn" onclick="closeModal('privacyModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2>Terms of Service</h2>
+            <p>By interacting with WebSale or purchasing our website source codes upon launch, you agree to use our digital assets according to our licensing guidelines. Redistribution or unauthorized reselling of source codes is strictly prohibited.</p>
+            <button class="close-btn" onclick="closeModal('termsModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <h2>About Us</h2>
+            <p>WebSale is a premier platform dedicated to providing high-quality, ready-to-use website source codes. Our mission is to empower developers, entrepreneurs, and businesses to deploy exceptional web applications quickly and affordably.</p>
+            <button class="close-btn" onclick="closeModal('aboutModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modals -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside the content box
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
     
     <div style="margin-top: 2px;">
       <marquee style="font-size:11px; max-width: 450px; margin: 0 auto; display: block;">Designed @Lisotech Innovations. call or whatsapp +260974101130</marquee>
